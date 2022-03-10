@@ -163,6 +163,7 @@ pygame.init()
 window = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 pygame.display.set_caption('Supermegaultragood game')
+pygame.display.set_icon(pygame.image.load('icon.svg'))
 
 #textures
 background = pygame.image.load('bg.png').convert()
@@ -267,8 +268,10 @@ while run:
         window.blit(mainbg, mainbg_rect)
         text(window, '|Start |N|', 40, GRAY,'Arial', WIDTH//2, HEIGHT//2)
         text(window, '|Exit to desktop |Q|', 40, GRAY, 'Arial', WIDTH//2, HEIGHT//2+50)
+        text(window, 'THIS GAME IS DISCONTINUED! THERE WOULD BE NO UPDATES!', 20, RED, 'Arial', WIDTH//2, HEIGHT//2+100)
+        text(window, 'You can visit my github for other games: https://github.com/levs16/', 20, SKYBLUE, 'Arial', WIDTH//2, HEIGHT//2+150)
         text(window, 'Version 0.5.1', 20, LIGHTGRAY, 'Arial', 545, 580 )
-        text(window, 'Levs Games®. All rights reserved!©', 20, LIGHTGRAY, 'Arial', 140, 580)
+        text(window, 'Aboba Games®. All rights reserved©', 20, LIGHTGRAY, 'Arial', 140, 580)
         pygame.display.update()
 
     if game == 1:
@@ -302,4 +305,4 @@ while run:
 
         
 pygame.quit()
-#V0.5.1
+#V0.5.2
